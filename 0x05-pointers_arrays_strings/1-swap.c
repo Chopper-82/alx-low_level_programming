@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 /**
  * Swap_int - Swaps the value of two integers.
  * @a: The first value to be swapped.

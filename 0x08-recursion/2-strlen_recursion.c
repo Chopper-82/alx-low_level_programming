@@ -1,17 +1,17 @@
 #include "main.h"
 
 /**
- * _strlen_recursion - returns the length of a string
- * @s: input
- * Return: Always 0 (Success)
+ * _strlen_recursion - calaculates the length of a string
+ * @s: the string to count
+ * Return: integer value
  */
 int _strlen_recursion(char *s)
 {
-	int i;
-
-	for (i = 0; s[i] != '\0'; i++)
+	if (*s == '\0')
 	{
-		i++;
+		return (0);
 	}
-	return(i);
+
+	s++;
+	return (_strlen_recursion(s) + 1);
 }
